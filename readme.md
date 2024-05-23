@@ -4,7 +4,8 @@ This is a sandboxed project folder for my work with ROS (the robotic operating s
 
 ## General Setup
 The environment is being setup in Ubuntu 22.04 in a virtual machine on an M3 Max. I will be following this tutorial at least in the beginning:
-[https://www.youtube.com/watch?v=Gg25GfA456o&list=PLLSegLrePWgJk6dfV-UXSh2TZ74wNntWt](https://www.youtube.com/watch?v=Gg25GfA456o&list=PLLSegLrePWgJk6dfV-UXSh2TZ74wNntWt)
+
+[ROS2 Tutorial on Youtube](https://www.youtube.com/watch?v=Gg25GfA456o&list=PLLSegLrePWgJk6dfV-UXSh2TZ74wNntWt)
 
 This video goes through the installation of ROS2 on Ubuntu. 
 
