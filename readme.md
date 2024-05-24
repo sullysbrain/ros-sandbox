@@ -11,3 +11,23 @@ This video goes through the installation of ROS2 on Ubuntu.
 
 TODO: Setup ROS2 with Docker for better containerization
 
+
+
+
+## Framework Installation
+Once you install ROS2, you must add the colcon autocomplete, then add ros, colcon, and the install to your bash. 
+To install ROS2:
+	- udo apt install ros-iron-desktop
+
+To install the colcon:
+	- sudo apt install python3-colcon-common-extensions
+
+With vim, open ~/.bashrc and add these three lines:
+	- source /opt/ros/iron/setup.bash
+	- source /usr/share/colcon_argcomplete/hook/colcon-argcomplete.bash
+	- source ~/ros2_ws/install/setup.bash
+
+## Steps to Build Project
+Create a ROS2 Package (inside the 'src' folder)
+>> ros2 pkg create my_robot_controller --build-type ament_python  --dependencies rclpy
+
