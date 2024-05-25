@@ -13,13 +13,14 @@ setup(
     ],
     install_requires=['setuptools'],
     zip_safe=True,
-    maintainer='parallels',
-    maintainer_email='parallels@todo.todo',
+    maintainer='vm',
+    maintainer_email='vm@todo.todo',
     description='TODO: Package description',
     license='TODO: License declaration',
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
+            "test_node = my_robot_controller.my_first_node:main"
         ],
     },
 )
