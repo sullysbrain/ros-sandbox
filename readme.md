@@ -9,6 +9,7 @@ The environment is being setup in Ubuntu 22.04 in a virtual machine on an M3 Max
 
 This video goes through the installation of ROS2 on Ubuntu. 
 
+TODO: Setup for 4 Mecanum Wheel for navigation
 TODO: Setup ROS2 with Docker for better containerization
 
 
