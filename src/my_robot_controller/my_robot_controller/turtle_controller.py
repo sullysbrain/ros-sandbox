@@ -17,16 +17,29 @@ class TurtleControllerNode(Node):
 
     def pose_callback(self, pose: Pose):
         cmd = Twist()
-        if pose.x > 9.0:
-            cmd.linear.x = 1.0
-            cmd.angular.z = 1.0
-        elif pose.x < 2.0:
-            cmd.linear.x = 1.0
-            cmd.angular.z = 1.0
-        else:
-            cmd.linear.x = 5.0
-            cmd.angular.z = 0.0
         
+        l = 4.0
+        a = 0.0
+
+        if pose.x > 9.0:
+            l = 1.0
+            a = 1.2
+        elif pose.x < 2.0:
+            l = 1.0
+            a = 1.2
+        else:
+            l = 4.0
+            a = 0.0
+    
+        if pose.y < 2.0:
+            l = 1.0
+            a = 1.3
+        elif pose.y > 9.0:
+            l = 1.0
+            a = 1.3
+        cmd.linear.x = l
+        cmd.angular.z = a
+
         self.cmd_vel_publisher_.publish(cmd)
 
 def main(args=None):
